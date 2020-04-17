@@ -1,0 +1,5 @@
+flask
+neo4j
+neomodel
+numpy
+flask_table

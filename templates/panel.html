@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+		<h1>Number of nodes in graph: {{ nodes }}</h1>
+		
+		<ul class="list-group list-group-horizontal">
+		  <li class="list-group-item">{{ n_riskpatients }} risk patients</li>
+		  <li class="list-group-item">{{ n_caretakers }} care takers</li>
+		  <li class="list-group-item">{{ n_visits }} visits</li>
+		</ul>
+
+		<br>
+		<br>
+
+		<ul class="list-group">
+			 <li class="list-group-item"><a href = '/clear'><button class="btn btn-outline-danger">Reset</button></a></li>
+
+			 <li class="list-group-item">
+		  		<div class="btn-group">
+				  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Simulate visits
+				  </button>
+				  <div class="dropdown-menu">
+				      <form class="px-5 py-3" action = "/simulate" method = "POST">
+					    
+					    <div class="form-group">
+					      <label for="n_rp">Patients</label>
+					      <input type="text" name="n_rp" class="form-control" id="n_rp" placeholder="">
+					    </div>
+
+					    <div class="form-group">
+					      <label for="n_ct">Care takers</label>
+					      <input type="number" name="n_ct" class="form-control" id="n_ct" placeholder="">
+					    </div>
+
+					    <div class="form-group">
+					      <label for="n_v">Visits/patient</label>
+					      <input type="number" name="n_v" class="form-control" id="n_v" placeholder="">
+					    </div>
+
+					     <div class="form-group">
+					      <label for="visit_noise">Visit noise</label>
+					      <input type="number" name="visit_noise" class="form-control" id="visit_noise" min="0" max="100" placeholder="">
+					        <div class="input-group-append">
+						    <span class="input-group-text" id="basic-addon2">%</span>
+						  </div>
+					    </div>
+					    <input type="submit" class="btn btn-primary" text="Simulate"></input>
+					  </form>
+				  </div>
+				
+				</li>
+
+			 <li class="list-group-item">
+		  		<div class="btn-group">
+				  <button type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Simulate transmissions
+				  </button>
+				  <div class="dropdown-menu">
+				      <form class="px-5 py-3" action = "/transmission" method = "POST">
+					    
+					    <div class="form-group">
+					      <label for="n_ac"> Assymtomatic carriers</label>
+					      <input type="text" name="n_ac" class="form-control" id="n_ac" placeholder="">
+					    </div>
+
+					    <div class="form-group">
+					      <label for="transmission_prb">Transmission probability</label>
+					      <input type="number" name="transmission_prb" class="form-control" id="transmission_prb" min="0" max="100" placeholder="">
+					        <div class="input-group-append">
+						    <span class="input-group-text" id="basic-addon2">%</span>
+						  </div>
+					    </div>
+
+					    <div class="form-group">
+					      <label for="inbubation_time">Incubation days</label>
+					      <input type="number" name="incubation_time" class="form-control" id="incubation_time" placeholder="">
+					    </div>
+					    
+					    <input type="submit" class="btn btn-primary" text="Simulate"></input>
+					  </form>
+				  </div>
+				
+				</li>
+				
+				<li class="list-group-item"><b><a href = '/search'><button class="btn btn-outline-dark">Search</button></a></b><br></li>
+		
+		
+
+  		
+	</ul>
+{% endblock %}
