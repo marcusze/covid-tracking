@@ -15,16 +15,14 @@ The analogies are
 | Fraudulent transactions   |  Infected patients      |
 
 ### Inputs:
-1. Visit logs
+1. Visit logs 
 2. Infected risk patients / elderly
 ### Output(s):
-1. Probability of asymptomatic carrier
+1. Ranking of most probable asymptomatic carriers among caretakers 
 2. *Probability of future infected patients*
 
-## Contribute
-1) **Live trials and feedback:**  we are in need of conducting real searches on real data. Please contact mz@predli.com if you want to test the tool. You only need A) visit logs and B) list of confirmed cases with dates of first symptoms. 
-2) **Algorithm and data model improvements:** 
-3) **Tech improvements:**
-Application to identify potential asymptomatic carriers of covid-19
-
+## Next steps & Contributions
+1) **Live trials and feedback:**  We are in need of conducting real searches on real data. Please contact mz@predli.com if interested.  
+2) **Algorithm and data model improvements:** TBD 
+3) **Tech improvements:** TBD
 
