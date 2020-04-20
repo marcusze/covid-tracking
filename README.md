@@ -11,15 +11,19 @@ The analogies are
 | Credit card fraud   |  Covid tracking  |
 |:---|:---|
 | Credit card transactions  |  Patient visits         |
-| Skimmed terminals         |  Asymptomatic carriers  |
 | Fraudulent transactions   |  Infected patients      |
+| Skimmed terminals         |  Asymptomatic carriers  |
 
 ### Inputs:
 1. Visit logs 
 2. Infected risk patients / elderly
+
 ### Output(s):
 1. Ranking of most probable asymptomatic carriers among caretakers 
 2. *Probability of future infected patients*
+
+## Screenshots
+Check out the detailed project decription, illustrations and screenshots in the shared [pdf here](covid-tracking.pdf).
 
 ## Next steps & Contributions
 1) **Live trials and feedback:**  We are in need of conducting real searches on real data. Please contact mz@predli.com if interested.  
