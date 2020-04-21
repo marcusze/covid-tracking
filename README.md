@@ -25,6 +25,14 @@ The analogies are
 ## Screenshots
 Check out the detailed project decription, illustrations and screenshots in the shared [pdf here](covid-tracking.pdf).
 
+### Illustration of the search algorithm
+<img src="imgs/search_illustration.png" > </img>
+
+
+### Data model from simulations
+<img src="imgs/data_model.png" > </img>
+
+
 ## Next steps & Contributions
 1) **Live trials and feedback:**  We are in need of conducting real searches on real data. Please contact mz@predli.com if interested.  
 2) **Algorithm and data model improvements:** TBD 
