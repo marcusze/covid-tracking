@@ -34,7 +34,7 @@ Check out the detailed project decription, illustrations and screenshots in the 
 
 
 ## Next steps & Contributions
-1) **Live trials and feedback:**  We are in need of conducting real searches on real data. Please contact mz@predli.com if interested.  
-2) **Algorithm and data model improvements:** TBD 
-3) **Tech improvements:** TBD
+1. **Live trials and feedback:**  We are in need of conducting real searches on real data. Please contact mz@predli.com if interested.  
+2. **Algorithm and data model improvements:** TBD 
+3. **Tech improvements:** TBD
 
